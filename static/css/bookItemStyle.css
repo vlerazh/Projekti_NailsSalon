@@ -1,0 +1,47 @@
+body {
+  background-color: #ffe3d6;
+}
+
+.bookDetails {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.bookDetails .details {
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2%;
+}
+
+.bookDetails .details h1 {
+  margin-top: 3%;
+}
+
+.bookDetails .details p,
+label {
+  margin-top: 6%;
+  font-size: 25px;
+}
+
+.bookDetails .details input[type="date"] {
+  margin: 6% 0;
+  width: 200px;
+  height: 30px;
+}
+
+.bookDetails .details input[type="submit"] {
+  height: 35px;
+  width: 100px;
+  color: white;
+  background-color: rgb(201, 5, 5);
+  font-weight: bold;
+  border-color: rgb(201, 5, 5);
+  border-radius: 10px;
+}

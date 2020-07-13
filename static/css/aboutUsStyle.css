@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #ffe3d6;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  width: 47%;
+  margin-top: 1%;
+}
+.header li {
+  list-style: none;
+  padding: 4%;
+}
+
+.header li:hover,
+.login:hover {
+  background-color: white;
+}
+
+.header .login {
+  margin-top: 1%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  padding: 2%;
+}
+
+.header .login .name {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  margin-left: 82%;
+  line-height: 80px;
+  margin-right: 20%;
+  display: none;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+
+.main {
+  height: 800px;
+}
+.main .social_media {
+  width: 5%;
+  padding: 3%;
+  display: inline-block;
+  position: fixed;
+}
+
+.main .social_media i {
+  display: block;
+  font-size: 25px;
+  padding: 15%;
+}
+.main .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.main fieldset {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  height: 200px;
+  border: white;
+  margin-top: 5%;
+}
+
+.main fieldset legend {
+  font-size: 50px;
+  margin-left: 5%;
+  font-family: "Marck Script", cursive;
+}
+
+.main fieldset p {
+  width: 50%;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  padding: 2%;
+}
+
+.main img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 180px;
+  width: 80%;
+  margin: auto;
+}
+
+.footer div {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin-top: 4%;
+  height: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.footer .adress {
+  margin-left: 10%;
+}
+.footer .vertical_line {
+  border-left: 1px solid black;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 10px;
+}
+
+@media screen and (max-width: 970px) {
+  .main {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    height: 500px;
+  }
+  .header ul,
+  .login {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10% auto;
+    background: #ffe3d6;
+    top: 85px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .header .login {
+    width: 76%;
+  }
+
+  .header ul li {
+    display: block;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: none;
+  }
+
+  #check:checked ~ .login {
+    display: none;
+  }
+
+  .footer {
+    height: 310px;
+    text-align: center;
+  }
+  .footer div {
+    display: block;
+    width: 80%;
+  }
+  .footer .adress,
+  .contact,
+  .opening {
+    margin-left: 10%;
+  }
+  .footer .vertical_line {
+    display: none;
+  }
+}

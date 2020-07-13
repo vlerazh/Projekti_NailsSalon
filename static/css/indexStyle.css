@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #ffe3d6;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.is_admin {
+  height: 30px;
+  text-align: center;
+  background-color: #fccbb5;
+}
+
+.is_admin a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  margin-top: 1%;
+}
+.header li {
+  list-style: none;
+  padding: 4%;
+}
+
+.header li:hover {
+  background-color: white;
+}
+
+.header .login {
+  margin-top: 3%;
+  font-size: 13px;
+}
+
+.header .login .name {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.main {
+  height: 500px;
+}
+.main .social_media {
+  width: 5%;
+  padding: 3%;
+  display: inline-block;
+  position: fixed;
+}
+
+.main .social_media i {
+  display: block;
+  font-size: 25px;
+  padding: 15%;
+}
+
+.welcome {
+  height: 450px;
+  width: 80%;
+  margin: 3% auto;
+}
+
+.showSlide {
+  display: none;
+}
+.showSlide img {
+  width: 500px;
+}
+.slidercontainer {
+  max-width: 500px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.left,
+.right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.left:hover,
+.right:hover {
+  background-color: rgba(243, 142, 142, 0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome .welcome_content {
+  display: inline-block;
+  vertical-align: top;
+  width: 43%;
+  padding: 2%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.welcome .welcome_content h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+.treatments {
+  width: 100%;
+  height: 600px;
+  background-color: #fccbb5;
+}
+
+.treatments .treatments_content {
+  width: 80%;
+  margin: 0 auto;
+}
+.treatments .treatments_content h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 5%;
+}
+.treatments_content div {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  height: 400px;
+  margin-top: 3%;
+  background-color: #ffe3d6;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.treatments_content div img {
+  height: 223px;
+}
+
+.treatments_content .mani_pedi {
+  margin-right: 4%;
+}
+.treatments_content .nail_polish img {
+  width: 322px;
+}
+.treatments_content .mani_pedi h1 {
+  padding: 16%;
+}
+
+.treatments_content .nail_polish {
+  margin-right: 4%;
+}
+.treatments_content .nail_polish h1,
+.nail_art h1 {
+  padding: 21%;
+}
+
+.footer {
+  height: 180px;
+  width: 80%;
+  margin: auto;
+}
+
+.footer div {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  margin-top: 4%;
+  height: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.footer .adress {
+  margin-left: 10%;
+}
+.footer .vertical_line {
+  border-left: 1px solid black;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 10px;
+}
