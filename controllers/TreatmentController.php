@@ -10,15 +10,15 @@ class TreatmentController
         $this->connection = $obj->getConnection();
     }
 
-    public function Insert($emri){
-        $sql = "INSERT INTO treatments (name) VALUES (?)";
+    public function Insert($emri,$updated_by){
+        $sql = "INSERT INTO treatments (name,updated_by) VALUES (?,?)";
         $statement = $this->connection->prepare($sql);
-        $statement->bind_param("s", $emri);
+        $statement->bind_param("ss", $emri,$updated_by);
         $statement->execute();
     }
 
-    public function Update($id,$name){
-        $sql = "UPDATE treatments SET name='$name' WHERE id=$id";
+    public function Update($id,$name,$updated_by){
+        $sql = "UPDATE treatments SET name='$name', updated_by='$updated_by' WHERE id=$id";
         $success = $this->connection->query($sql);
         if($success){
            header("location: adminForm.php");
@@ -51,6 +51,7 @@ class TreatmentController
                 <tr>
                 <td>'.$treatment['id'].'</td>
                 <td>'.$treatment['name'].'</td>
+                <td>'.$treatment['updated_by'].'</td>
                 <td>
                     <a  href="editTreatmentForm.php?id='.$treatment['id'].'"><button class="edit">Edit</button></a>
                     &nbsp;
