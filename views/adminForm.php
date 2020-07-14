@@ -3,6 +3,7 @@
   include_once '../controllers/TreatmentController.php';
   include_once '../controllers/ItemController.php';
   include_once '../controllers/BookedItemController.php';
+
   $controller =  new UserController();
   $users = $controller->GetAll();
  
@@ -85,6 +86,7 @@
               <thead>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Updated by</th>
                 <th>Buttons</th>
               </thead>
               <tbody>
